@@ -1,0 +1,167 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsla(216, 12%, 54%);
+  --Dark-Blue: hsl(212, 16.9%, 15.1%);
+  --Very-Dark-Blue: hsl(225, 8.7%, 9%);
+
+  --ligh-Blue: hsla(216, 12%, 54%, 10%);
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.star {
+  background-color: var(--ligh-Blue);
+  border-radius: 300%;
+  padding: 8px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 3%;
+  max-width: 400px;
+  padding: 35px;
+  gap: 10px;
+  background-color: var(--Dark-Blue);
+}
+
+.container h1 {
+  color: var(--White);
+  font-weight: var(--fw-bold);
+}
+
+.container p,
+li {
+  color: var(--Medium-Grey);
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.list-container {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.list-btn {
+  text-align: center;
+  list-style: none;
+  color: var(--Medium-Grey);
+  background-color: var(--ligh-Blue);
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 300%;
+  cursor: pointer;
+}
+
+.list-btn:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.list-btn:focus {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+
+.btn-submit {
+  color: var(--White);
+  line-height: 0.5;
+  background-color: var(--Orange);
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 100vw;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.btn-submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.thankyou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.top h2 {
+  font-size: 15px;
+  color: var(--Orange);
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bot {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rating {
+  background-color: var(--ligh-Blue);
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .container h1 {
+    font-size: 15px;
+  }
+  .container p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .list-container {
+    padding: 1px;
+  }
+}
